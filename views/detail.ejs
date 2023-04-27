@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <title>Document</title>
+
+</head>
+<body>
+  <h1 class="bg-warning-subtle mb-0 p-3 text-center border-bottom  border-danger border-1">MY RESUME</h1>
+<div class="containe  w-100 bg-warning-subtle d-flex justify-content-evenly">
+ 
+  <div class="left w-40 mt-5 mb-5 d-flex flex-column justify-content-evenly">
+    <img class="" src="<%= data.profile%>" style="width:300px; height:300px;">
+    
+      <h1 class=" text-body-emphasis border-bottom w-55 mt-1  fs-2 border-danger border-1">Personal Details</h1>
+         <h5 class="fw-normal"><%= data.name%></h5>
+         <h5 class="fw-normal">Email-<%= data.email%></h5>
+         <h5 class="fw-normal">Mob-<%= data.contact%></h5>
+         <h5 class="fw-normal"><%= data.birth%></h5>
+        </div>
+
+        <div class="right w-40 mt-5 mb-5 d-flex flex-column justify-content-evenly">
+      <h1 class="border-bottom w-50 fs-2 border-danger border-1">Skill</h1>
+         <h5 class="fw-normal"><%= data.skill%></h5>
+         <h1 class="border-bottom w-55 fs-2 border-danger border-1">Education Detail</h1>
+         <h5 class="fw-normal"><%= data.education%></h5>
+         <h1 class="border-bottom w-50 fs-2 border-danger border-1">Experience</h1>
+         <h5 class="fw-normal"><%= data.experience%></h5>
+         <h1 class="border-bottom w-50 fs-2 border-danger border-1">Hobbies</h1>
+         <h5 class="fw-normal"><%= data.hobbies%></h5>
+         <h1 class="border-bottom w-50 fs-2 border-danger border-1">Language</h1>
+         <h5 class="fw-normal"><%= data.language%></h5>
+        </div>
+         
+        
+       
+       
+        
+        
+  
+
+  <div>
+  <a class="fs-3" href="/">Home</a><br>
+  <a class="fs-3" href="/update/<%=data._id%>">Update</a>
+</div>
+</div>
+
+  
+        
+       
+        
+  
+      
+         
+
+
+  
+</body>
+</html>
